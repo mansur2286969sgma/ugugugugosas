@@ -30,5 +30,27 @@
     </footer>
   </div>
 </template>
-
-
+    <script>
+export default {
+  head() {
+    return {
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-MPRBV4HM0D',
+          async: true
+        },
+        {
+          innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-MPRBV4HM0D');
+          `,
+          type: 'text/javascript',
+          charset: 'UTF-8'
+        }
+      ]
+    }
+  }
+}
+    </script>
