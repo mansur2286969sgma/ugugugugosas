@@ -15,7 +15,7 @@
           <div class="absolute top-1/2 left-1/2 w-6 h-0.5 bg-white transform -translate-x-1/2 -translate-y-1/2 -rotate-45"></div>
         </div>
       </button>
-      <nav class="basis-1/2 flex flex-row items-center justify-end px-4 gap-4 max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:w-full max-sm:h-screen max-sm:bg-white max-sm:flex-col max-sm:justify-center max-sm:gap-6 max-sm:pt-20":class="{'max-sm:hidden': !burger}">
+      <nav class="basis-1/2 flex flex-row items-center justify-end px-4 gap-4 max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:w-full max-sm:h-screen max-sm:bg-gray-900 max-sm:flex-col max-sm:justify-center max-sm:gap-6 max-sm:pt-20":class="{'max-sm:hidden': !burger}">
 
         <button 
           v-if="burger"
