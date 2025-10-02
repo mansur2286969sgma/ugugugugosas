@@ -50,11 +50,11 @@
       <slot /> 
     </main>
 
-    <footer class="w-full bg-black border-t-2 border-[#00CCFF]">
+    <footer class="w-full bg-gray-900 border-t-2 border-[#00CCFF]">
       <div class="flex items-center justify-center px-4 py-2 gap-4">
-        <a href="https://www.youtube.com/"><img src="/assets/images/youtube.png" class="w-16 h-16"></a>
-        <a href="https://www.youtube.com/"><img src="/assets/images/youtube.png" class="w-16 h-16"></a>
-        <a href="https://www.youtube.com/"><img src="/assets/images/youtube.png" class="w-16 h-16"></a>
+        <a href="https://app.netlify.com/teams/mansur2286969sgma/projects"><img src="/assets/images/netlify.png" class="w-16 h-16"></a>
+        <a href="https://github.com/mansur2286969sgma/ugugugugosas"><img src="/assets/images/github.png" class="w-16 h-16"></a>
+        <a href="https://analytics.google.com/analytics/web/#/a368958209p505673999/reports/intelligenthome?params=_u..nav%3Dmaui"><img src="/assets/images/analytics.png" class="w-16 h-16"></a>
       </div>
       <div class="w-full bg-gray-900 border-t-2 border-[#00CCFF]">
         <div class="text-xs text-gray-500 text-center">
