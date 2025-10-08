@@ -46,7 +46,7 @@
       </nav>
     </header>
 
-    <main class="p-5 flex bg-gray-900 min-h-screen mt-16">
+    <main class="p-5 flex bg-gray-900 min-h-screen mt-0">
       <slot /> 
     </main>
 
