@@ -2,7 +2,7 @@
   <div>
     <header class="flex w-full items-center justify-between bg-black shadow-sm py-2 sticky top-0 z-50 text-white">
       <div class="basis-1/4 items-center justify-start px-10">
-        <img src="/assets/images/water.png" alt="Logo" class="h-12 w-12">
+        <img class="min-w-[40px] w-10 h-10 flex-shrink-0 object-cover rounded-full" src="/assets/images/water.png" alt="Logo">
       </div>
       <button class="hidden max-sm:block px-4 text-white focus:outline-none z-50"@click="switchBurger">
         <div v-if="!burger" class="space-y-1">
@@ -46,13 +46,13 @@
       </nav>
     </header>
 
-    <main class="p-5 flex bg-gray-900 min-h-screen">
+    <main class="p-5 flex bg-gray-900 min-h-screen mt-16">
       <slot /> 
     </main>
 
     <footer class="w-full bg-gray-900 border-t-2 border-[#00CCFF]">
       <div class="flex items-center justify-center px-4 py-2 gap-4">
-        <a href="https://app.netlify.com/teams/mansur2286969sgma/projects"><img src="/assets/images/netlify.png" class="w-16 h-16"></a>
+        <a href="https://app.netlify.com/projects/water229/configuration/general"><img src="/assets/images/netlify.png" class="w-16 h-16"></a>
         <a href="https://github.com/mansur2286969sgma/ugugugugosas"><img src="/assets/images/github.png" class="w-16 h-16"></a>
         <a href="https://analytics.google.com/analytics/web/#/a368958209p505673999/reports/intelligenthome?params=_u..nav%3Dmaui"><img src="/assets/images/analytics.png" class="w-16 h-16"></a>
       </div>
