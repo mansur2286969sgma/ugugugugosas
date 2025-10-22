@@ -102,7 +102,7 @@ const musicItems = reactive([
     title: 'No Choice', 
     artist: 'Tame Impala', 
     type: 'song', 
-    image: 'impala.jpg',
+    image: 'impala.png',
     info: { year: '2022', genre: 'Psychedelic Pop', rating: 4, duration: '3:42' }
   },
   { 
@@ -117,14 +117,14 @@ const musicItems = reactive([
     title: 'Currents', 
     artist: 'Tame Impala', 
     type: 'album', 
-    image: 'impala.jpg',
+    image: 'impala.png',
     info: { year: '2015', genre: 'Psychedelic Pop', rating: 5, duration: '51:12' }
   },
   { 
     title: 'InnerSpeaker', 
     artist: 'Tame Impala', 
     type: 'album', 
-    image: 'impala.jpg',
+    image: 'impala.png',
     info: { year: '2010', genre: 'Psychedelic Rock', rating: 4, duration: '47:23' }
   },
   { 
@@ -139,21 +139,21 @@ const musicItems = reactive([
     title: 'Borderline', 
     artist: 'Tame Impala', 
     type: 'song', 
-    image: 'impala.jpg',
+    image: 'impala.png',
     info: { year: '2019', genre: 'Psychedelic Pop', rating: 4, duration: '4:34' }
   },
   { 
     title: 'Let It Happen', 
     artist: 'Tame Impala', 
     type: 'song', 
-    image: 'impala.jpg',
+    image: 'impala.png',
     info: { year: '2015', genre: 'Psychedelic Pop', rating: 5, duration: '7:47' }
   },
   { 
     title: 'Feels Like We Only Go Backwards', 
     artist: 'Tame Impala', 
     type: 'song', 
-    image: 'impala.jpg',
+    image: 'impala.png',
     info: { year: '2012', genre: 'Psychedelic Pop', rating: 5, duration: '3:12' }
   },
   { 
@@ -168,7 +168,7 @@ const musicItems = reactive([
     title: 'Patience', 
     artist: 'Tame Impala', 
     type: 'song', 
-    image: 'impala.jpg',
+    image: 'impala.png',
     info: { year: '2019', genre: 'Psychedelic Pop', rating: 4, duration: '4:52' }
   }
 ])
