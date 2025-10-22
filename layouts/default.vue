@@ -4,6 +4,24 @@
       <div class="basis-1/4 items-center justify-start px-10">
         <img class="min-w-[40px] w-10 h-10 flex-shrink-0 object-cover rounded-full" src="/assets/images/water.png" alt="Logo">
       </div>
+      
+      <!-- Поисковая строка -->
+      <div class="basis-1/4 flex justify-center">
+        <div class="relative w-64">
+          <input 
+            type="text" 
+            v-model="searchQuery"
+            placeholder="Search..."
+            class="w-full px-4 py-2 rounded-full bg-gray-800 text-white border-2 border-[#00CCFF] focus:outline-none focus:border-blue-400"
+          >
+          <div class="absolute right-3 top-1/2 transform -translate-y-1/2">
+            <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
       <button class="hidden max-sm:block px-4 text-white focus:outline-none z-50"@click="switchBurger">
         <div v-if="!burger" class="space-y-1">
           <div class="w-6 h-0.5 bg-white"></div>
@@ -15,6 +33,7 @@
           <div class="absolute top-1/2 left-1/2 w-6 h-0.5 bg-white transform -translate-x-1/2 -translate-y-1/2 -rotate-45"></div>
         </div>
       </button>
+      
       <nav class="basis-1/2 flex flex-row items-center justify-end px-4 gap-4 max-sm:fixed max-sm:top-0 max-sm:left-0 max-sm:w-full max-sm:h-screen max-sm:bg-gray-900 max-sm:flex-col max-sm:justify-center max-sm:gap-6 max-sm:pt-20":class="{'max-sm:hidden': !burger}">
 
         <button 
@@ -31,13 +50,13 @@
         <NuxtLink to="/Lab3" class="block p-4 hover:bg-[#00CCFF] hover:text-white border-b border-gray-200 last:border-b-0">Lab3</NuxtLink>
         <NuxtLink to="/Lab4" class="block p-4 hover:bg-[#00CCFF] hover:text-white border-b border-gray-200 last:border-b-0">Lab4</NuxtLink>
        <NuxtLink to="/Lab5" class="block p-4 hover:bg-[#00CCFF] hover:text-white border-b border-gray-200 last:border-b-0">Lab5</NuxtLink>
-        <NuxtLink to="/Lab6" class="block p-4 hover:bg-[#00CCFF] hover:text-white border-b border-gray-200 last:border-b-0">Lab6</NuxtLink>
+        <NuxtLink to="/Lab6" class="block p-4 hover:bg-[#00CCFF] hover:text-white border-b border-gray-200 last:border-b-0">Songs</NuxtLink>
       </div>
         <div v-show="labsVisible && burger"class="hidden max-sm:block max-sm:w-full max-sm:mt-2 max-sm:border-2 max-sm:border-[#00CCFF] max-sm:rounded-lg">
         <NuxtLink to="/Lab3" class="block p-4 hover:bg-[#00CCFF] hover:text-white border-b border-gray-200 text-center" @click.native="closeMenus">Lab3</NuxtLink>
         <NuxtLink to="/Lab4" class="block p-4 hover:bg-[#00CCFF] hover:text-white border-b border-gray-200 text-center" @click.native="closeMenus">Lab4</NuxtLink>
         <NuxtLink to="/Lab5" class="block p-4 hover:bg-[#00CCFF] hover:text-white border-b border-gray-200 text-center" @click.native="closeMenus">Lab5</NuxtLink>
-        <NuxtLink to="/Lab6" class="block p-4 hover:bg-[#00CCFF] hover:text-white text-center" @click.native="closeMenus">Lab6</NuxtLink>
+        <NuxtLink to="/Lab6" class="block p-4 hover:bg-[#00CCFF] hover:text-white text-center" @click.native="closeMenus">Songs</NuxtLink>
          </div>
       </div>
         
@@ -72,7 +91,8 @@ export default {
     return {
       burger: false,
       labsVisible: false,
-      isMobile: false
+      isMobile: false,
+      searchQuery: ''
     }
   },
   methods: {
